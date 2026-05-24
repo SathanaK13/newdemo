@@ -1,0 +1,92 @@
+.bg-one{
+  background-image: url('images/bg-one.png');
+  height:100vh;
+  background-size: cover;
+}
+
+.bg-one-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.heading-color{
+  color:#F5F7FF;
+  text-shadow: #8B5CF6;
+  font-size: 55px;
+  animation: slideBottom 1.2s ease;
+}
+
+.btn-one{
+  color:black;
+  background-color:#FFCC66;
+  height: 40px;
+  width: 135px;
+  border: none;
+  border-radius: 8px;
+  font-size:18px;
+}
+
+.btn-left{
+  animation:slideRight 1.2s ease;
+}
+
+.btn-right{
+  animation:slideLeft 1.2s ease;
+}
+
+
+.btn-class{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+
+
+@keyframes slideBottom{
+
+  from{
+    transform: translateY(120px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+
+@keyframes slideRight {
+
+  from{
+    transform: translateX(-120px);
+    opacity:0;
+  }
+
+  to{
+    transform:translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+@keyframes slideLeft {
+
+  from{
+    transform:translateX(120px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+body{
+  margin: 0px;
+}
